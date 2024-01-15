@@ -1,0 +1,12 @@
+version: '3'
+services:
+  pytorch-inferencing:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    # environment:
+    #   - MODELNAME=demo-model
+    #   - VERSION=v2.2.2
+    #   - MODEL_FILE_NAME=model.pt
+    ports:
+      - 9000:9000
